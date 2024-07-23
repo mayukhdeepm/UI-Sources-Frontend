@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+  --navbar-height: 60px;
+  --navbar-padding: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  height: var(--navbar-height);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 var(--navbar-padding);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-right: 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbar-center {
+  display: none;
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background-color: black;
+  flex-direction: column;
+  padding: 1rem 0;
+  color: #999999;
+}
+
+.navbar-center.active {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0.5rem var(--navbar-padding);
+  font-size: var(--font-size-small);
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.10rem;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .navbar-center {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --navbar-height: 70px;
+    --navbar-padding: 2rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.125rem;
+    --font-size-large: 1.5rem;
+  }
+
+  .nav-item {
+    padding: 0 0.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --navbar-height: 70px;
+    --navbar-padding: 3rem;
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1.25rem;
+    --font-size-large: 1.75rem;
+  }
+
+  .navbar-container {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --navbar-height: 100px;
+    --navbar-padding: 4rem;
+    --font-size-small: 1.25rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+  }
+
+  .navbar-container {
+    max-width: 2400px;
+  }
+}

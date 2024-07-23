@@ -1,0 +1,36 @@
+/* App.css (or your CSS file) */
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Custom black scrollbar for WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #121212; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scrollbar */
+  border-radius: 5px; /* roundness of the scrollbar */
+}
+
+/* Custom black scrollbar for Firefox */
+/* Note: Firefox currently only supports scrollbar-color */
+/* You can use scrollbar-width: thin; to set the width, if needed */
+html {
+  scrollbar-color: #888 #121212;
+  scrollbar-width: thin;
+}

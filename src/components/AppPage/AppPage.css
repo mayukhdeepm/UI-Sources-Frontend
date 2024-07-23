@@ -1,0 +1,213 @@
+/* AppPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.app-page {
+  min-height: 100%;
+  background-color: #0A0A0A;
+  color: #e0e0e0;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+}
+
+.content-layout {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* App Info Styles */
+.app-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.app-developer {
+  color: #4CAF50;
+  margin: 0;
+}
+
+/* Supported Devices Styles */
+.supported-devices h2 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #b0b0b0;
+}
+
+.device-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.device {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.device svg {
+  margin-bottom: 0.5rem;
+}
+
+/* Action Buttons Styles */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.action-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.app-store-btn, .play-store-btn {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.save-app-btn {
+  background-color: transparent;
+  border: 2px solid #4CAF50 !important;
+  color: #4CAF50;
+}
+
+/* Updated Navigation Buttons */
+.button-row {
+  display: flex;
+  background-color: #0A0A0A;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding: 50px 50px 0px 50px;
+}
+
+.button-row button {
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+
+.nav-button {
+  flex: 1;
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  color: #808080;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover, .nav-button.active {
+  color: #00A173;
+  background-color: black;
+  border-top: 1px solid #333333;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.nav-button .icon {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-button {
+    font-size: 0.4rem;
+  }
+
+  .nav-button .icon {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 90% !important;
+  }
+
+  .button-row {
+    padding: 5px;
+  }
+
+  .nav-button {
+    padding: 5px;
+  }
+
+  .button-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2560px) {
+  .content {
+    width: 100%;
+    padding-left: 20px !important;
+  }
+  
+}
