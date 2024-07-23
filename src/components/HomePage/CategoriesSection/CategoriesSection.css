@@ -54,9 +54,9 @@
 
 .category-card {
   flex: 0 0 auto;
-  width: 300px;
+  width: 400px;
   background-color: blacks;
-  border-radius: 8px;
+  border-radius: 2px;
   overflow: hidden;
   scroll-snap-align: start;
   position: relative;
@@ -76,13 +76,15 @@
 .category-info h3 {
   color: white;
   margin: 0;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .category-info p {
   color: #888;
   margin: 0.5rem 0 0;
-  font-size: 0.8rem;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .slider-arrow {

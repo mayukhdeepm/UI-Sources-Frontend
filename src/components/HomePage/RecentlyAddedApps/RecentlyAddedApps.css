@@ -53,9 +53,9 @@
 
 .app-card {
   flex: 0 0 auto;
-  width: 300px;
+  width: 230px;
   background-color: black;
-  border-radius: 8px;
+  border-radius: 2px;
   overflow: hidden;
   scroll-snap-align: start;
   position: relative;
@@ -76,21 +76,25 @@
 .app-info2 h3 {
   color: white;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .app-info2 h6 {
   color: #9D9D9D;
   margin: 0.5rem 0 0;
-  font-size: 0.8rem;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .app-info2 p {
   color: #888;
   margin: 0.5rem 0 0;
-  font-size: 0.7rem;
+  font-size: 9px;
+  font-weight: 600;
   border: 0.5px solid #333;
   padding: 5px;
+  display: inline-block;
 }
 
 .slider-arrow1 {

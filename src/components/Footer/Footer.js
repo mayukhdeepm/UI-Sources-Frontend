@@ -1,13 +1,14 @@
-import React from 'react';
-import { Twitter, Twitch } from 'lucide-react';
-import './Footer.css';
+import React from "react";
+import { Twitter, Twitch } from "lucide-react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          Explore a collection of design interfaces<br />
+          Explore a collection of design interfaces
+          <br />
           and find inspiration for your next spatial app.
         </p>
         <div className="footer-buttons">
@@ -24,17 +25,26 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-links">
-        <a href="#" className="footer-link">Cookie policy</a>
-        <a href="#" className="footer-link">Copyright complaints</a>
-        <a href="#" className="footer-link">Privacy policy</a>
-        <a href="#" className="footer-link">Terms and conditions</a>
+        <a href="#" className="footer-link">
+          Cookie policy
+        </a>
+        <a href="#" className="footer-link">
+          Copyright complaints
+        </a>
+        <a href="#" className="footer-link">
+          Privacy policy
+        </a>
+        <a href="#" className="footer-link">
+          Terms and conditions
+        </a>
       </div>
-      <p className="footer-copyright">
-        Applications, games, pictures, all trademarks, and registered trademarks are the property of their respective owners.
-      </p>
-      <p className="footer-copyright">
-        © 2024 UX Sources
-      </p>
+      <div className="cp-content">
+        <p className="footer-copyright">
+          Applications, games, pictures, all trademarks, and registered
+          trademarks are the property of their respective owners.
+        </p>
+        <p className="footer-copyright">© 2024 UX Sources</p>
+      </div>
     </footer>
   );
 };

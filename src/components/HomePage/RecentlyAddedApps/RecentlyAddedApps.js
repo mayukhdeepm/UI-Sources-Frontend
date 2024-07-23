@@ -93,8 +93,8 @@ const RecentlyAddedApps = () => {
         <button className="slider-arrow1 right" onClick={() => scroll("right")}>
           <ChevronRight size={24} />
         </button>
-        <div className="gradient-overlay left"></div>
-        <div className="gradient-overlay right"></div>
+        {/* <div className="gradient-overlay left"></div>
+        <div className="gradient-overlay right"></div> */}
       </div>
     </div>
   );

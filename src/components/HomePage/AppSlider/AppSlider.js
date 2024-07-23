@@ -76,11 +76,11 @@ const AppSlider = () => {
         </button>
         <div className="app-slider" ref={sliderRef}>
           {apps.map((app, index) => (
-            <div key={index} className="app-card">
+            <div key={index} className="app-card12">
               <img
                 src={app.image}
                 alt={app.name}
-                className="app-image"
+                className="app-image1"
               />
               <div className="app-info1">
                 <h3>{app.name}</h3>
@@ -93,8 +93,8 @@ const AppSlider = () => {
         <button className="slider-arrow right" onClick={() => scroll("right")}>
           <ChevronRight size={24} />
         </button>
-        <div className="gradient-overlay left"></div>
-        <div className="gradient-overlay right"></div>
+        {/* <div className="gradient-overlay left"></div>
+        <div className="gradient-overlay right"></div> */}
       </div>
     </div>
   );
